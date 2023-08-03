@@ -274,7 +274,7 @@ z-index: 7;
 }
 
 backdrop.is-hidden .modal{
-  scale: 0,6;
+  transform: translate(-50%, -50%) scale(0.6);
 }
 
 .modal {
@@ -284,6 +284,7 @@ backdrop.is-hidden .modal{
   top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%) scale(1);
+  transition: transform  250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   width: 528px;
   height: 581px;
@@ -1085,4 +1086,17 @@ letter-spacing: 6%;
 text-align: center;
 line-height: 1.88;
 
+}
+
+.footer-botton{
+  position: relative;
+}
+
+.footer-icon{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%, -50%);
+  margin-left: 10px;
+  fill:red;
 }
