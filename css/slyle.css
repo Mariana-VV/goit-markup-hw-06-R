@@ -378,9 +378,7 @@ margin-bottom: 12px;
   padding: 0;
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 40px;
-
-  
+  padding-left: 40px; 
 }
 
 .form-label{
@@ -485,6 +483,7 @@ border-radius: 4px;
 .policy-checkbox:focus + .checkbox-span{
   background-color: var(--style-color);
  color: #fff;
+ fill: #fff;
   background-image: url(/images/checked.svg);
   background-size: contain;
   background-origin: border-box;
