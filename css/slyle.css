@@ -440,6 +440,7 @@ margin-bottom: 12px;
 }
 
 .policy label{
+  display: block;
   margin-right: 5px;
 }
 
@@ -483,8 +484,8 @@ border-radius: 4px;
 .policy-checkbox:checked + .checkbox-span,
 .policy-checkbox:focus + .checkbox-span{
   background-color: var(--style-color);
-  fill: #fff;
-  background-image: url(/images/icon\ check.svg);
+ color: #fff;
+  background-image: url(/images/checked.svg);
   background-size: contain;
   background-origin: border-box;
    
