@@ -290,12 +290,14 @@ backdrop.is-hidden .modal{
   height: 581px;
   padding: 35px;
   background-color: #fff;
+
+
 }
 
 .close-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 14px;
+  right: 13px;
  border: none;
   border-radius: 50%;
   background-color: #fff;
@@ -308,7 +310,7 @@ width: 30px;
   stroke: rgba(0, 0, 0, 0.1);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ 
 }
 
 .close-icon:hover{
@@ -344,6 +346,8 @@ text-align:center;
 color:#212121;
 
 letter-spacing: 3%;
+margin: 0;
+margin-bottom: 12px;
 }
 
 .form-field{
@@ -419,7 +423,8 @@ letter-spacing: 3%;
 }
 
 .form-field textarea{
-  padding-left: 0;
+  padding: 12px 16px;
+  resize: none;
 }
 
 .policy{
@@ -434,7 +439,11 @@ letter-spacing: 3%;
   text-decoration: underline;
 }
 
-.sent-button{
+.policy label{
+  margin-right: 5px;
+}
+
+.sent-btn{
   display: block;
   width: 200px;
   height: 50px;
@@ -442,7 +451,7 @@ letter-spacing: 3%;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
-margin-bottom: 30px;
+
   border-radius: 4px;
   border: none;
 font-weight: 700;
@@ -463,10 +472,6 @@ text-align: center;
   right: 0;
 }
 
-.close-button svg{
-  width: 20px;height: 20px;
-}
-
 .checkbox-span{
 display: inline-block;
 width: 15px;
@@ -475,13 +480,14 @@ border: 1px solid black;
 border-radius: 4px;
 }
 
-.policy-checkbox:checked + .checkbox-span{
-  background-color: #2196f3;
+.policy-checkbox:checked + .checkbox-span,
+.policy-checkbox:focus + .checkbox-span{
+  background-color: var(--style-color);
+  fill: #fff;
   background-image: url(/images/icon\ check.svg);
   background-size: contain;
   background-origin: border-box;
-  
-  
+   
 }
 
 .policy-checkbox{
